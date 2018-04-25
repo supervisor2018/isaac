@@ -2,10 +2,6 @@ body, html {
   height: 100%;
 }
 
-html {
-  overflow: scroll;
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -64,17 +60,27 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
 
+.legal {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  color: #1D2841;
+  letter-spacing: -0.2px;
 }
 
 @media only screen and (min-width: 312px) and (max-width: 375px) {
   body {
-    background-image: @url('../images/isaac2018-mobile.jpg');
+    background-image: url('../images/cover.jpg');
   }
 
   .title {
-    font-family: 'Montserrat-Black';
-    font-size: 27px !important;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 27px;
     color: #364976;
     letter-spacing: -0.11px;
     margin: 0;
@@ -85,19 +91,17 @@ footer {
   .donate {
     width: 150px;
     line-height: 50px;
-    font-family: "Montserrat-Bold";
-    font-size: 1em !important;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px !important;
     color: #FFFFFF;
     letter-spacing: -0.1px;
   }
-}
 
-
-.legal {
-  font-family: "Montserrat-Bold";
-  font-size: 18px;
-  color: #1D2841;
-  letter-spacing: -0.2px;
+  .legal {
+    font-size: 0.8em;
+  }
 }
 
 
