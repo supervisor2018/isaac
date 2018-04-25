@@ -73,7 +73,7 @@ footer {
 
 @media only screen and (min-width: 312px) and (max-width: 375px) {
   body {
-    background-image: url('../images/cover.jpg');
+    background-image: url('../images/cover@3x.jpg');
   }
 
   .title {
