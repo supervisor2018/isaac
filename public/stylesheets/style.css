@@ -1,0 +1,78 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat-Black;
+  font: 14px, sans-serif;
+  background-image: url('../images/isaac2018-background.jpg');
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.71);
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.title {
+  /* ISAAC ROSENBERG FOR: */
+  font-size: 50px;
+  color: #364976;
+  width: 60%;
+  margin: 0 auto; 
+  text-transform: uppercase;
+  letter-spacing: -0.21px;
+  margin-top: 133px; 
+}
+
+.donate {
+  /* Rectangle 6: */
+  background: #364976;
+  width: 302px;
+  line-height: 100px;
+  font-family: Montserrat-Bold;
+  font-size: 47.61px;
+  color: #FFFFFF;
+  letter-spacing: -0.2px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 25px;
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+
+@media (max-width: 375px) {
+  .title {
+    
+  }
+}
+
+.legal {
+  font-family: Montserrat-Bold;
+  font-size: 18px;
+  color: #1D2841;
+  letter-spacing: -0.2px;
+}
+
+
