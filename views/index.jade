@@ -1,10 +1,9 @@
 extends layout
 
-block content
-  .cover 
-    h1.title= title
-    if subtitle
-      h3.subtitle= subtitle
-    a.donate(href='donate')= "Donate"
-    footer
-      p.legal Paid for by Isaac Rosenberg for Supervisor 2018. Financial disclosures are available at sfethics.org
+block content 
+  h1.title= title
+  if subtitle
+    h3.subtitle= subtitle
+  a.donate(href='donate')= "Donate"
+  footer
+    p.legal Paid for by Isaac Rosenberg for Supervisor 2018. Financial disclosures are available at sfethics.org
