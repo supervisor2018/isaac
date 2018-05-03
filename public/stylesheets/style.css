@@ -20,14 +20,6 @@ body {
   background-color: #364976 !important;
 }
 
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%; 
-}
-
 .red {
   color: #C4466A;
 
@@ -73,8 +65,6 @@ a {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
 }
 
@@ -83,6 +73,7 @@ footer {
   font-size: 18px;
   font-weight: 700;
   font-style: normal;
+  text-align: center;
   color: #1D2841;
   letter-spacing: -0.2px;
 }
