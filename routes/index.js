@@ -10,4 +10,13 @@ router.get('/donate', function(req, res, next) {
   res.render('donate', { title: 'READY TO ACT?', amount: 'Amount', placeholder: 'How much is CHANGE worth to YOU?', amounts: [25, 50, 100, 250, 500], contribution_limit: 500, currency: "USD"})
 })
 
+router.get('/complete', function(req, res, next) {
+  res.render('complete', {
+    message: "Thank you so much! Can't wait to revive our generation together 🙏🏼", 
+    subtitle: "Come join the conversation", 
+    facebook: "https://facebook.com/2018Rosenberg",
+    twitter: "https://twitter.com/2018Rosenberg"
+  });
+})
+
 module.exports = router;
