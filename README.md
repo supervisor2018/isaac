@@ -1,4 +1,4 @@
-![Rendering of Isaac 2018 Website](https://raw.githubusercontent.com/supervisor2018/www/public/images/website.png)
+![Rendering of Isaac 2018 Website](https://raw.githubusercontent.com/supervisor2018/www/master/public/images/website.png)
 
 # Isaac Rosenberg for Supervisor 2018
 
