@@ -1,4 +1,4 @@
-![Rendering of Isaac 2018 Website](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![Rendering of Isaac 2018 Website](https://raw.githubusercontent.com/supervisor2018/www/public/images/website.png)
 
 # Isaac Rosenberg for Supervisor 2018
 
@@ -20,6 +20,6 @@ When you're ready, run `npm install` in this directory. You'll install everythin
 
 You'll need to create a `.env` file in order to be able to work. Email me goisaac2018@gmail.com if you're at this point and we can chat more.
 
- 
+
 
 
