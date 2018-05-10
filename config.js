@@ -1,7 +1,5 @@
 var config = {};
 
-config.donation_max = 500;
-
 config.database = {
   "development": {
     "username": process.env.DB_USERNAME_DEV,
