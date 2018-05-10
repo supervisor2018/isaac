@@ -12,10 +12,10 @@ Currently we're fairly close to ready. But right now I need to focus more on the
 
 I'm leaving some issues on here, feel free to tackle them. When you're ready, submit a PR and then we can get this live together!
 
-[Isaac Rosenberg](https://facebook.com/2018Rosenberg)__
-Candidate for U.S. Elected Office__
-San Francisco Board of Supervisors__
-District 10__
+[Isaac Rosenberg](https://facebook.com/2018Rosenberg) <br />
+Candidate for U.S. Elected Office <br />
+San Francisco Board of Supervisors <br />
+District 10
 
 ## Installation 
 
