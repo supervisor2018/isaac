@@ -15,7 +15,7 @@ I'm leaving some issues on here, feel free to tackle them. When you're ready, su
 [Isaac Rosenberg](https://facebook.com/2018Rosenberg) <br />
 Candidate for U.S. Elected Office <br />
 San Francisco Board of Supervisors <br />
-District 10 
+District 10
 
 ## Installation 
 
