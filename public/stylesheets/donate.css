@@ -1,0 +1,227 @@
+#section-tabs {
+  height: 80px;
+  font-size: 28px;
+  list-style: none;
+  background-color: #364976;
+  color: white;
+  width: 75%;
+  display: table;
+  margin: 0 auto;
+}
+
+#section-tabs li {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  padding-top: 0.5em;
+
+}
+
+.amounts-inline label {
+  float: left;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.radios label:last-child {
+  margin-right: 0;
+}
+
+#section-tabs span {
+  border-radius: 50%;
+  width: 45px;
+  line-height: 45px;
+  border: 4px solid white; 
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#fieldsets {
+  width: 50%; 
+  height: 135px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 312px) and (max-width: 375px) {
+  #fieldsets {
+    width: 80%;
+  }
+
+  #section-tabs li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    padding-top: 0.5em;
+  }
+}
+
+
+#fieldsets fieldset {
+  float: left;
+  padding-left: 0;
+  border: 0;
+}
+
+fieldset {
+   transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  display: none;
+}
+
+#fieldsets fieldset:last-child {
+  display: block;
+}
+
+
+#fieldsets .current {
+  border: 0;
+  display: block !important;
+}
+
+ul .current {
+  border-bottom: 7px solid white;
+}
+
+#fieldsets .amount {
+  line-height: 50px;
+  width: 126px;
+  background-color: #364976;
+  color: white;
+  font-family: ArialMT;
+  font-size: 19.86px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-bottom: 15px;
+} 
+
+.amounts-inline input[type='radio'] {
+  position: absolute;
+  left: -9999px;
+}
+
+.amounts-inline label:last-child {
+  margin: 0 !important;
+}
+
+.amounts-inline input:checked+label {
+  background-color: #d73362 !important;
+}
+
+.amounts-inline label:hover {
+  background-color: #1e2942 !important;
+}
+
+.amounts-inline label:active {
+  background-color: #902e4a !important;
+}
+
+input[type='text']::placeholder, 
+input[type='number']::placeholder,
+input[type='tel']::placeholder {
+  font-family: Montserrat-Bold;
+  font-size: 16px;
+  color: rgba(54,73,118,0.90);
+  letter-spacing: 0.33px;
+}
+
+input[type='text'], 
+input[type='number'],
+input[type='tel'] {
+  font-family: Montserrat-ExtraBold;
+  font-size: 16px;
+  color: rgba(54,73,118,0.90);
+  letter-spacing: 0.33px;
+}
+
+.custom {
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.custom {
+  border: 6px solid #364976;
+  border-radius: 4px;
+  width: 418px;
+  float: left;
+  margin-left: 15px;
+  background: transparent;
+  height: 50px;
+}
+
+input[type='text'], 
+input[type='number'],
+input[type='tel'], 
+.StripeElement {
+  background: transparent;
+  height: 50px;
+  line-height: 50px; 
+  border: 6px solid #364976;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.custom {
+  width: 418px;
+}
+
+.currency {
+  border: 1px inset #ccc;
+  float: left;
+  display: inline-block;
+}
+
+.currency:before {
+  position: absolute;
+  top: 0;
+  content: "$";
+  left: 5px;
+}
+
+.buttons {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#next {
+  /* Rectangle 6: */
+  background: #C4466A;
+  border-radius: 3px;
+  line-height: 50px;
+  display: block;
+  text-decoration: none;
+  /* Continue: */
+  font-family: Montserrat-Bold;
+  font-size: 19.86px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
+
+input[type='submit'] {
+  /* Rectangle 6: */
+  background: #C4466A;
+  border-radius: 3px;
+  line-height: 50px;
+  height: 50px;
+  display: block;
+  margin-left: 0;
+  text-decoration: none;
+  /* Continue: */
+  font-family: Montserrat-Bold;
+  font-size: 19.86px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  display: none;
+}
+
+.points {
+  list-style-type: none;
+}
+.points li {
+  font-family: Montserrat;
+  text-align: left;
+}

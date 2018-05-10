@@ -68,6 +68,11 @@ footer {
   width: 100%;
 }
 
+.index + footer {
+  position: absolute;
+  bottom: 0;
+}
+
 .legal {
   font-family: "Montserrat";
   font-size: 18px;
@@ -80,7 +85,7 @@ footer {
 
 @media only screen and (min-width: 312px) and (max-width: 375px) {
   body {
-    background-image: url('../images/cover@3x.jpg');
+    background-image: url('../images/isaac2018-mobile.jpg');
   }
 
   .title {

@@ -1,7 +1,8 @@
 extends layout
 
-block content 
-  h1.title= title
-  if subtitle
-    h3.subtitle= subtitle
-  a.donate(href='donate')= "Donate"
+block content
+  div.index 
+    h1.title= title
+    if subtitle
+      h3.subtitle= subtitle
+    a.donate(href='donate')= "Donate"

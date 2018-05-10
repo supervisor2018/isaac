@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/donate', function(req, res, next) {
-  res.render('donate', { title: 'READY TO ACT?', amount: 'Amount', placeholder: 'How much is CHANGE worth to YOU?', amounts: [25, 50, 100, 250, 500], contribution_limit: 500, currency: "USD"})
+  res.render('donate', { title: 'Donate', amount: 'Amount', placeholder: 'Custom Amount', amounts: [25, 50, 100, 250, 500], contribution_limit: 500, currency: "USD"})
 })
 
 router.get('/complete', function(req, res, next) {
