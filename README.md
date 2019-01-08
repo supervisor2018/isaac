@@ -4,7 +4,7 @@
 
 Hello! 
 
-This is the official website of the Isaac Rosenberg for Supervisor 2018 campaign. [Isaac Rosenberg](https://twitter.com/2018Rosenberg) is an official candidate for Elected Office in San Francisco, CA.
+This is the official website of the Isaac Rosenberg for Supervisor 2018 campaign. [Isaac Rosenberg](https://twitter.com/2018Rosenberg) was an official candidate for Elected Office in San Francisco, CA.
 
 Right now the codebase is in Node, with a Postgres DB, deploying on Heroku. We're using Stripe to process donations.
 
