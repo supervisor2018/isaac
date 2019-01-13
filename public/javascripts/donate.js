@@ -1,29 +1,13 @@
 $(document).ready(function() {
   var stripe = Stripe('pk_test_VdwPB8dfZSR9vXuiZYqfAQQU');
   var elements = stripe.elements();
-
-  $(".donate-form").validate({
-    success : function(label){
-      label.addClass("valid one-third column").text("✓");
-    },
-    error : function(e){
-      label.addClass("invalid one-third column").text(e) 
-    },
-    onsubmit:false,
-    rules: {
-      phone: {
-        required: true,
-        phoneUS: true
-      },
-      first_name: {
-        required: true,
-      },
-      email: {
-        required: true
-      }
-    }
+  var sections = $('fieldset');
+  var parsleyForm = $('.donate-form').parsley({
+    errorsWrapper: '<div class="row u-full-width"></div>'
   });
 
+  console.log(form); 
+ 
   var style = {
     base: {
       // Add your base input styles here. For example:
@@ -126,15 +110,32 @@ $(document).ready(function() {
     form.submit();
   }
 
+  parsleyForm.on('field:error', function() {
+    var element = this.$element;
+    var error = $(element).attr('data-parsley-required-message');
+    var arrErrorMsg = element.getErrorsMessages();
+    console.log(arrErrorMsg);
+    $(element).attr("placeholder", error);
+    console.log(element); 
+  })
+
   $("#next").on("click", function(e){
-    console.log(e.target);
-    nextSection();
+    parsleyForm.whenValidate({
+      group: 'block-' + $("fieldset.current").index()
+    }).done(function() {
+      nextSection();
+    })
   });
 
-  $('label').on("click", function(e){
+  $('.amount').on("click", function(e){
     setTimeout(function() {
+      $('.custom').val("");
       nextSection();
     }, 80)
+  });
+
+  sections.each(function(index, section) {
+    $(section).find(':input').attr('data-parsley-group', 'block-' + index);
   });
 
   function nextSection(){

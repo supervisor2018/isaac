@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var Donation = require('../models/donation.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -7,7 +8,14 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/donate', function(req, res, next) {
-  res.render('donate', { title: 'Donate', amount: 'Amount', placeholder: 'Custom Amount', amounts: [25, 50, 100, 250, 500], contribution_limit: 500, currency: "USD"})
+  res.render('donate', { 
+    title: 'Donate',
+    amount: 'Amount',
+    placeholder: 'Custom Amount',
+    amounts: [25, 50, 100, 250, 500],
+    contribution_limit: 500,
+    currency: "USD"
+  });
 })
 
 router.get('/complete', function(req, res, next) {
