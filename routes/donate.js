@@ -22,6 +22,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next) {
+
+  // Simply redirect, don't charge the credit card 
+  res.redirect('/complete');
+  return; 
+
   console.log(req.body); 
 
   var userObj = {}; 
@@ -92,11 +97,11 @@ router.post('/', function(req, res, next) {
           console.log(amount); 
           amount = amount * 100;
 
-          return stripe.charges.create({
-            amount: amount,
-            currency: 'usd',
-            customer: customer.id
-          })
+          // return stripe.charges.create({
+          //   amount: amount,
+          //   currency: 'usd',
+          //   customer: customer.id
+          // })
         }).then(function(charge) {
           Donation
                   .build({

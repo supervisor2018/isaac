@@ -20,7 +20,7 @@ router.get('/donate', function(req, res, next) {
 
 router.get('/complete', function(req, res, next) {
   res.render('complete', {
-    message: "Thank you so much! Can't wait to revive our generation together 🙏🏼", 
+    message: "This campaign has ended, your card has not been charged.", 
     subtitle: "Come join the conversation", 
     facebook: "https://facebook.com/2018Rosenberg",
     twitter: "https://twitter.com/2018Rosenberg"
