@@ -3,58 +3,5 @@ extends layout
 block content
   
   h1.title= title
-  form.donate-form(method='POST', action='/donate' id='payment-form')
-    ul#section-tabs.row
-      li.current.active.four.columns #[span 1] Amount
-      li.four.columns #[span 2] Details
-      li.four.columns #[span 3] Payment
-    #fieldsets.u-full-width
-      fieldset.current
-        div.amounts-inline
-          .radios
-            each amount, index in amounts
-              input(type='radio' name='amount' data-parsley-required=true data-parsley-required-message="Choose a present amount, or put in your own! - Isaac" value='#{index}' id='amount_#{index}' )
-              label.amount(for='amount_#{index}')= '$' + amount
-          input.custom(type='number' name='custom_amount' data-parsley-required=true data-parsley-required-message="" max='#{contribution_limit}' placeholder='#{placeholder}')
-      fieldset.next.u-full-width
-        div.row
-          input#first_name.one-half.column(type='text' data-parsley-required=true name='first_name' placeholder='First name')
-          input#last_name.one-half.column(type='text' name='last_name' data-parsley-required=true placeholder='Last name')
-        div.row
-          input#address_line1.ten.columns(type='text' data-parsley-required=true name='address_line1' placeholder='Address')
-          input#address_line2.two.columns(type='text' name='address_line2' placeholder='Apartment')
-        div.row
-          input#city.five.columns(type='text' data-parsley-required=true name='city' placeholder='City')
-          input#state.five.columns(type='text' data-parsley-required=true name='state' placeholder='State')
-          input#zip.two.columns.u-full-width(type='number' data-parsley-required=true name='zip' placeholder='Zip')
-        div.row 
-          input.email.column(type='text' data-parsley-required=true name='email' placeholder='Email')
-        div.row
-          input.phone_number.column(type='tel' data-parsley-required=true name='phone_number' placeholder='Phone Number')
-        div.row
-          .legal.column This information is required by law
-        div.row
-          input.employer.one-half.column(type='text' data-parsley-required=true name='employer' placeholder='Your Employer')
-          input.occupation.one-half.column(type='text' data-parsley-required=true name='occupation' placeholder='Your Occupation')
-      fieldset.payment
-        div#card-element.row
-          div#card-number(type='text' name='card_number' autocomplete='cc-number' placeholder='Card number')
-          div#expiration-date.two.columns(type='tel' name='expiration_date' autocomplete='' placeholder='MM/YY')
-          div#cvc.two.columns(type='text' name='cvc' placeholder='CVC')
-        div#card-errors(role='alert')
-        div.row
-          h3 Contribution Rules
-          ul.points.column
-            li I am at least 18 years of age
-            li I am a United States citizen or have permanent status in the U.S.
-            li This contribution is made from my own funds, and not those of another.
-            li This contribution is made on a personal credit card or debit card for which I have the legal obligation to pay, and is not made either on a corporate or business entity card or on the card of another person.
-            li I am not a principal or owner of an entity that has received a contract in the last six months, or is currently engaged in negotiations for a contract that is subject to approval by the Board of Supervisors, or is a party thereof. 
-            li This contribution is NOT tax deductible. 
-        div.row
-          input.agreement-checkbox.one.column(type='checkbox' data-parsley-required=true name='agreement')
-          label.agreement-label.ten.columns I confirm that the following statements are true and accurate.
-      fieldset.buttons.row
-        a(class="btn column" id="next" href='#')= "Continue"
-        input(type="submit" class="btn column u-full-width" value="Contribute") 
+  include ./form/form
 
