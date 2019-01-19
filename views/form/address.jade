@@ -1,0 +1,8 @@
+block address
+  div.row
+    input#address_line1.ten.columns(type='text' data-parsley-required=true name='address_line1' placeholder='Address')
+    input#address_line2.two.columns(type='text' name='address_line2' placeholder='Apartment')
+  div.row
+    input#city.five.columns(type='text' data-parsley-required=true name='city' placeholder='City')
+    input#state.five.columns(type='text' data-parsley-required=true name='state' placeholder='State')
+    input#zip.two.columns.u-full-width(type='number' data-parsley-required=true name='zip' placeholder='Zip')

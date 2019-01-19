@@ -1,0 +1,8 @@
+block amounts
+  fieldset.current
+    div.amounts-inline
+      .radios
+        each amount, index in amounts
+          input(type='radio' name='amount' data-parsley-required=true data-parsley-required-message="Choose a present amount, or put in your own! - Isaac" value='#{index}' id='amount_#{index}' )
+          label.amount(for='amount_#{index}')= '$' + amount
+      input.custom(type='number' name='custom_amount' data-parsley-required=true data-parsley-required-message="" max='#{contribution_limit}' placeholder='#{placeholder}')

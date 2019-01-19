@@ -1,0 +1,6 @@
+block card_element
+  div#card-element.row
+    div#card-number(type='text' name='card_number' autocomplete='cc-number' placeholder='Card number')
+    div#expiration-date.two.columns(type='tel' name='expiration_date' autocomplete='' placeholder='MM/YY')
+    div#cvc.two.columns(type='text' name='cvc' placeholder='CVC')
+  div#card-errors(role='alert')

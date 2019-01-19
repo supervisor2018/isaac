@@ -1,0 +1,15 @@
+block info 
+  fieldset.next.u-full-width
+    div.row
+      input#first_name.one-half.column(type='text' data-parsley-required=true name='first_name' placeholder='First name')
+      input#last_name.one-half.column(type='text' name='last_name' data-parsley-required=true placeholder='Last name')
+    include address
+    div.row 
+      input.email.column(type='text' data-parsley-required=true name='email' placeholder='Email')
+    div.row
+      input.phone_number.column(type='tel' data-parsley-required=true name='phone_number' placeholder='Phone Number')
+    div.row
+      .legal.column This information is required by law
+    div.row
+      input.employer.one-half.column(type='text' data-parsley-required=true name='employer' placeholder='Your Employer')
+      input.occupation.one-half.column(type='text' data-parsley-required=true name='occupation' placeholder='Your Occupation')
